@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAndAbstractDemo.Concrete
 {
-    public class StarsProcessManager : IStarsProcess
+    public class StarsProcessManager : IStars
     {
         public void AddStar(Customer customer)
         {

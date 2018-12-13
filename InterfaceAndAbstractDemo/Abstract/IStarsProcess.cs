@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAndAbstractDemo.Abstract
 {
-   public  interface IStarsProcess
+   public  interface IStars
     {
         int StarCount(Customer customer);
         void AddStar(Customer customer);

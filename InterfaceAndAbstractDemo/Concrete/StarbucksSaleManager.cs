@@ -10,21 +10,21 @@ namespace InterfaceAndAbstractDemo.Concrete
 {
     public class StarbucksSaleManager:BaseSaleManager
     {
-        IStarsProcess starsProcess;
+        IStars stars;
         Customer customer;
-        public StarbucksSaleManager(IStarsProcess starsProcess,Customer customer)
+        public StarbucksSaleManager(IStars stars, Customer customer)
         {
-            this.starsProcess = starsProcess;
+            this.stars = stars;
             this.customer = customer;
         }
 
         public override void Sale(Product product)
         {
-            if (starsProcess.StarCount(customer) == 10)
+            if (stars.StarCount(customer) == 10)
                 SaleFree(product);
             else
             {
-                starsProcess.AddStar(customer);
+                stars.AddStar(customer);
                 base.Sale(product);
             }         
         }
