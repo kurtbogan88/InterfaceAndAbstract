@@ -51,7 +51,7 @@
     <Compile Include="Abstract\ICustomerService.cs" />
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Abstract\ISaleService.cs" />
-    <Compile Include="Abstract\IStarsProcess.cs" />
+    <Compile Include="Abstract\IStars.cs" />
     <Compile Include="Adapters\MernisServiceAdapter.cs" />
     <Compile Include="Concrete\CustomerCheckManager.cs" />
     <Compile Include="Concrete\NeroCustomerManager.cs" />
